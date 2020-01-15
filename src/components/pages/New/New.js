@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemForm from '../../shared/ItemForm/ItemForm';
+import ItemForm from '../ItemForm/ItemForm';
 
 class New extends React.Component {
   render() {

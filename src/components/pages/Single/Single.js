@@ -15,8 +15,8 @@ class Single extends React.Component {
 
   componentDidMount() {
     const { itemId } = this.props.match.params;
-    console.log(itemId);
-    console.log(this.props.match);
+    // console.log(itemId);
+    // console.log(this.props.match);
     itemData.getSingleItem(itemId)
       .then((response) => {
         this.setState({ item: response.data });
