@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router, Route, Redirect, Switch
+  BrowserRouter as Router, Route, Redirect, Switch,
 }
   from 'react-router-dom';
 import firebase from 'firebase/app';
@@ -62,7 +62,7 @@ class App extends React.Component {
         <PrivateRoute path="/stuff/new" exact component={New} authed={authed} />
         <PrivateRoute path="/stuff" exact component={MyStuff} authed={authed} />
         <PrivateRoute path="/stuff/:stuffId/edit" exact component={Edit} authed={authed} />
-        <PrivateRoute path="/stuff/:stuffId" exact component={Single} authed={authed} />
+        <PrivateRoute path="/stuff/:itemId" exact component={Single} authed={authed} />
         </Switch>
       </Router>
     </div>

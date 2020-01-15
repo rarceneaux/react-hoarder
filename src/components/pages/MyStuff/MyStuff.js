@@ -2,7 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import authData from '../../../helpers/data/authData';
 import SingleItemCard from '../../shared/SingleItemCard/SingleItemCard';
-import itemShape from '../../../helpers/propz/itemShape';
+// import itemShape from '../../../helpers/propz/itemShape';
 import itemData from '../../../helpers/data/itemData';
 import './MyStuff.scss';
 
@@ -22,11 +22,17 @@ class MyStuff extends React.Component {
     this.getItems();
   }
 
+  deleteSingleItem = (itemId) => {
+    itemData.deleteItem(itemId)
+      .then(() => this.getItems())
+      .catch((err) => console.error('err', err));
+  }
+
   render() {
     return (
       // <h1>My Stuff</h1>
       <div className="MyStuff">
-        {this.state.items.map((item) => <SingleItemCard key={item.id} item={item}/>)}
+        {this.state.items.map((item) => <SingleItemCard deleteSingleItem={this.deleteSingleItem} key={item.id} item={item}/>)}
       </div>
     );
   }
