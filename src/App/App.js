@@ -12,6 +12,8 @@ import MyStuff from '../components/pages/MyStuff/MyStuff';
 import New from '../components/pages/New/New';
 import Edit from '../components/pages/Edit/Edit';
 import Single from '../components/pages/Single/Single';
+import ItemForm from '../components/pages/ItemForm/ItemForm';
+
 // import itemData from '../helpers/data/itemData';
 
 import './App.scss';
@@ -59,7 +61,7 @@ class App extends React.Component {
         <Switch>
         <PrivateRoute path="/" exact component={Home} authed={authed} />
         <PublicRoute path="/auth" exact component={Auth} authed={authed} />
-        <PrivateRoute path="/stuff/new" exact component={New} authed={authed} />
+        <PrivateRoute path="/stuff/new" exact component={ItemForm} authed={authed} />
         <PrivateRoute path="/stuff" exact component={MyStuff} authed={authed} />
         <PrivateRoute path="/stuff/:stuffId/edit" exact component={Edit} authed={authed} />
         <PrivateRoute path="/stuff/:itemId" exact component={Single} authed={authed} />
