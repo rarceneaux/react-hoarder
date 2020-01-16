@@ -1,11 +1,12 @@
 import React from 'react';
+import SingleItemCard from '../../shared/SingleItemCard/SingleItemCard';
 
 
 class Edit extends React.Component {
   render() {
     return (
       <div className="Edit">
-        <h1>EDIT</h1>
+        {<SingleItemCard/>}
       </div>
     );
   }

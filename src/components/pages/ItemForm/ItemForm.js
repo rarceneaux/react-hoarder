@@ -51,6 +51,20 @@ saveItemEvent = (e) => {
     .catch((err) => console.error('err', err));
 }
 
+editItemEvent = (e) => {
+  const { itemId } = this.props.match.params;
+  e.preventDefault();
+  const newItem = {
+    itemName: this.state.itemName,
+    itemDescription: this.state.itemDescription,
+    itemImage: this.state.itemImage,
+    uid: authData.getUid(),
+  };
+  itemData.updateItem(itemId, newItem)
+    .then(() => this.props.history.push('/stuff'))
+    .catch((err) => console.error('err', err));
+}
+
 render() {
   const { itemName, itemImage, itemDescription } = this.state;
   const { itemId } = this.props.match.params;
@@ -91,7 +105,7 @@ render() {
          />
        </div>
        { itemId
-         ? <button className="btn btn-secondary" onClick={this.editBoardEvent}>Edit Board</button>
+         ? <button className="btn btn-secondary" onClick={this.editItemEvent}>Edit Board</button>
          : <button className="btn btn-secondary" onClick={this.saveItemEvent}>Save Item</button>
        }
       </form>
