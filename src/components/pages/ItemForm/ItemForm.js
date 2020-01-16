@@ -70,7 +70,7 @@ render() {
   const { itemId } = this.props.match.params;
   return (
       <div className="ItemForm">
-         <form className="items-stuf">
+         <form className="items-stuff">
        <div className="form-group">
          <label htmlFor="item-name">Item Name</label>
          <input 
