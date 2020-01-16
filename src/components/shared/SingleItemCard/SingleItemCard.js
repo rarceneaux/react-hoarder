@@ -24,7 +24,7 @@ class SingleItemCard extends React.Component {
       <div className="card">
           <div className="card-body">
           <h5 className="card-title">{item.itemName}</h5>
-          {/* <img src={item.itemImage} className="card-img-top" alt="..."/> */}
+          <img src={item.itemImage} className="card-img-top" alt="..."/>
             <p className="card-text">{item.itemDescription}</p>
     <button className="btn btn-danger" onClick={this.deleteItemEvent}>Delete</button>
     <Link className="btn btn-warning" to={`/stuff/${item.id}/edit`}>Edit</Link>
