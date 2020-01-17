@@ -5,14 +5,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project designed to allow an user to keep inventory of a lot of stuff. Thus, the name Hoarders is on point. 
 
 ## Screenshots
-## Login
-![](src/assets/imgs/Login.png)
 ## Read
-![](src/assets/imgs/Read.png)
+![](https://raw.githubusercontent.com/rarceneaux/react-hoarder/master/src/assets/imgs/Read.png)
 ## Add
-![](src/assets/imgs/Add.png)
+![](https://raw.githubusercontent.com/rarceneaux/react-hoarder/master/src/assets/imgs/Add.png)
 ## Edit
-![](src/assets/imgs/Edit.png)
+![](https://raw.githubusercontent.com/rarceneaux/react-hoarder/master/src/assets/imgs/Edit.png)
 ## Available Scripts
 
 In the project directory, you can run:
