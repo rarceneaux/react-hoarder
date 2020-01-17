@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Title: Hoarders
 
+## Description
+This project designed to allow an user to keep inventory of a lot of stuff. Thus, the name Hoarders is on point. 
+
+## Screenshots
+![](src/assets/imgs/Login.png)
+![](src/assets/imgs/Read.png)
+![](src/assets/imgs/Add.png)
+![](src/assets/imgs/Edit.png)
 ## Available Scripts
 
 In the project directory, you can run:
