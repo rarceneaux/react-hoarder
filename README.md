@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Title: Hoarders
 
 ## Description
-This project designed to allow an user to keep inventory of a lot of stuff. Thus, the name Hoarders is on point. 
+This CRUD app named Hoarders is designed to allow a user to keep inventory of a lot of stuff. Built with React using Vanilla JavaScript, Bootstrap 4, and Firebase.
 
 ## Visit My app: https://hoarder-f806b.firebaseapp.com
 
